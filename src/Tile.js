@@ -29,6 +29,10 @@ class Tile {
 
   init(rootEl) {
     rootEl.insertAdjacentElement('afterbegin', this.elTile);
+
+    this.elTile.ondragstart = function() {
+      return false;
+    };
   }
 
   setImg(imgUrl, width, height) {
@@ -99,7 +103,6 @@ class Tile {
   render() {
     this.elTile.style.top = this.position.top + 'px';
     this.elTile.style.left = this.position.left + 'px';
-   
   }
 
   onMove() {

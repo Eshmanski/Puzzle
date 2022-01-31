@@ -1,8 +1,8 @@
 import Tile from './Tile';
 
 const defaultOptions = {
-  width: 700,
-  height: 700,
+  width: 500,
+  height: 500,
   segmentsX: 2,
   segmentsY: 2,
 }
@@ -134,7 +134,7 @@ class Display {
     });
     this.isShow = false;
     this.elDisplay.style.backgroundImage = `url(${this.imgUrl})`;
-    
+    this.mediator.callMethod('renameShowBtn', this.isShow);
   }
 
   showTiles() {
@@ -143,7 +143,7 @@ class Display {
     });
     this.isShow = true;
     this.elDisplay.style.backgroundImage = '';
-
+    this.mediator.callMethod('renameShowBtn', this.isShow);
   }
 
   setImage(imgUrl) {
@@ -178,7 +178,6 @@ class Display {
 
     return tiles;
   }
- 
 }
 
 export default Display;

@@ -1,7 +1,7 @@
 body {
-  overflow:  hidden;
   text-align: center;
   background-color: #4e3a03;
+  font-family: 'Mochiy Pop P One', sans-serif;
 }
 
 .Puzzle-title {
@@ -30,7 +30,6 @@ body {
 }
 
 .Form {
-  
   width: 200px;
   position: absolute;
   display: flex;
@@ -46,6 +45,7 @@ body {
 
 .Form .titleForm {
   margin: 0;
+  font-size: 16px;
 }
 
 .drawer {
@@ -61,7 +61,6 @@ body {
   top: 0px;
   border-radius: 15px;
   color: grey;
-
 }
 
 .drawer:hover {
@@ -126,14 +125,16 @@ body {
 }
 
 .Form .title {
-  margin: 30px 0 5px 0  ;
+  margin: 10px 0 0 0;
+  font-size: 12px;
+  text-align: left;
 }
 
 .Form .validator {
   color: rgb(138, 0, 0);
   margin: 0;
   visibility: hidden;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .link {
@@ -147,4 +148,9 @@ body {
 
 .link a:visited, .link a:visited  {
   text-decoration: none;
+}
+
+.Form > form {
+  padding: 5px;
+  border: 2px dashed rgb(202, 202, 202);
 }
